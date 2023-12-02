@@ -1,11 +1,11 @@
-Basic Script Structure:
+#Basic Script Structure:
 
 bash
 
 #!/bin/bash
 echo "Hello, World!"
 
-Variable Handling:
+#Variable Handling:
 
 bash
 
@@ -14,7 +14,7 @@ echo "Enter your name:"
 read name
 echo "Hello, $name!"
 
-Conditional Statements:
+#Conditional Statements:
 
 bash
 
@@ -27,7 +27,7 @@ else
     touch "$file"
 fi
 
-Looping:
+#Looping:
 
 bash
 
@@ -36,7 +36,7 @@ for i in {1..10}; do
     echo $i
 done
 
-User Input and Validation:
+#User Input and Validation:
 
 bash
 
@@ -49,7 +49,7 @@ else
     echo "Invalid input. Please enter a number."
 fi
 
-String Manipulation:
+#String Manipulation:
 
 bash
 
@@ -59,7 +59,7 @@ read sentence
 words=$(echo "$sentence" | wc -w)
 echo "Number of words: $words"
 
-File Operations:
+#File Operations:
 
 bash
 
@@ -71,7 +71,7 @@ while IFS= read -r line; do
     ((line_number++))
 done < "$file"
 
-Functions:
+#Functions:
 
 bash
 
@@ -87,7 +87,7 @@ factorial() {
 result=$(factorial 5)
 echo "Factorial of 5: $result"
 
-Command Line Arguments:
+#Command Line Arguments:
 
 bash
 
@@ -99,7 +99,7 @@ else
     echo "Usage: $0 <num1> <num2>"
 fi
 
-Error Handling:
+#Error Handling:
 
 bash
 
@@ -112,7 +112,7 @@ else
     exit 1
 fi
 
-Advanced Scripting:
+#Advanced Scripting:
 
 bash
 
@@ -122,7 +122,7 @@ search_directory="/path/to/search/directory"
 
 find "$search_directory" -type f -name "*$search_extension" -exec echo {} \;
 
-Parsing and Processing Text Files:
+#Parsing and Processing Text Files:
 
 bash
 
