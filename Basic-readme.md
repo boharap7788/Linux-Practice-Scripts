@@ -1,24 +1,24 @@
 #Basic Script Structure:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 echo "Hello, World!"
 
 #Variable Handling:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 echo "Enter your name:"
 read name
 echo "Hello, $name!"
 
 #Conditional Statements:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 file="example.txt"
 if [ -e "$file" ]; then
     echo "$file exists!"
@@ -29,18 +29,18 @@ fi
 
 #Looping:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 for i in {1..10}; do
     echo $i
 done
 
 #User Input and Validation:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 echo "Enter a number:"
 read input
 if [[ "$input" =~ ^[0-9]+$ ]]; then
@@ -51,9 +51,9 @@ fi
 
 #String Manipulation:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 echo "Enter a sentence:"
 read sentence
 words=$(echo "$sentence" | wc -w)
@@ -61,9 +61,9 @@ echo "Number of words: $words"
 
 #File Operations:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 file="example.txt"
 line_number=1
 while IFS= read -r line; do
@@ -73,9 +73,9 @@ done < "$file"
 
 #Functions:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 factorial() {
     if [ "$1" -eq 0 ]; then
         echo 1
@@ -89,9 +89,9 @@ echo "Factorial of 5: $result"
 
 #Command Line Arguments:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 if [ "$#" -eq 2 ]; then
     sum=$(( $1 + $2 ))
     echo "Sum of $1 and $2 is $sum"
@@ -101,9 +101,9 @@ fi
 
 #Error Handling:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 file="nonexistent.txt"
 if [ -e "$file" ]; then
     echo "$file exists!"
@@ -114,9 +114,9 @@ fi
 
 #Advanced Scripting:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 search_extension=".txt"
 search_directory="/path/to/search/directory"
 
@@ -124,9 +124,9 @@ find "$search_directory" -type f -name "*$search_extension" -exec echo {} \;
 
 #Parsing and Processing Text Files:
 
-bash
 
-#!/bin/bash
+
+#!/bin/
 csv_file="example.csv"
 while IFS=, read -r column1 column2 column3; do
     echo "Column1: $column1, Column2: $column2, Column3: $column3"
